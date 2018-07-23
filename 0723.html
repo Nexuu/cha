@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <style>
+    </style>
+</head>
+
+<body>
+    <ol>
+        <h1 style="color: blue">文本</h1>
+        <li>text-indent:2px 设置首行进行缩减</li>
+        <li>text-align: 设置文本的位置 </br>
+            center: 设置内容在容器的水平方向上居中 </br>
+            left: 设置内容在窗口的水平方向上靠左 </br>
+            right: 设置内容在容器的水平方向上靠右</br>
+        </li>
+        <li>text-decoration: 设置文本的装饰</br>
+            none: 没有任何装饰 </br>
+            underline: 下划线</br>
+        </li>
+        <li>
+            margin:0 auto; 设置容器自身水平居中
+        </li>
+        <li>加粗，倾斜，下划线</br>
+            font-weight:bold;</br>
+            font-style:italic;</br>
+            text-decoration:underline;</br>
+        </li>
+        <h1 style="color: blue">背景</h1>
+        <li>background-color: 设置背景颜色</li>
+        <li>background-image: 设置背景图片</br>
+            background-image:url(图片的路径)</br>
+            默认情况下图片如果比容器要小，它会平铺满盒子。并且padding区域有背景图
+        </li>
+        <li>background-repeat: 设置背景是否平铺：</br>
+            no-repeat:不平铺</br>
+            repeat-x：在水平方向上平铺</br>
+            repeat-y:在垂直方向上平铺</br>
+            repeat:平铺
+        </li>
+        <li>background-position: 设置背景图片的位置</br>
+            background-postion: x y;</br>
+            注意：x,y可以是具体的数值，也可以是一些英文单词。</br>
+
+            x轴（水平方向）: left 左 center 中 right 右</br>
+
+            y轴（垂直方向）: top 上 center 中 bottom下</br>
+
+            定位属性可以是负数
+        </li>
+        <li>background-attachment:fixed; 设置背景是否固定 fixed：背景会被固定住，即不会被滚动条滚走
+        </li>
+        <li>背景的连写方式：</br>
+            background: background-color background-image background-repeatbackground-position;</br>
+            比如：background:blue url(images/wuyifan.jpg) no-repeat 100px 100px
+        </li>
+        <h1 style="color: blue">列表</h1>
+        <li>UL 无序列表</br>
+            无序列表是一个没有顺序项目的列表，此列表项默认粗体圆点进行标识</br>
+            list-style-type: type="none" 无标记。</br>
+            type="circle" 空心圆</br>
+            type=“disc” 实心圆 默认值</br>
+            type="square" 方块符</br>
+        </li>
+        <li>有序列表</br>
+            有序列表也是一列项目，只是列表项目使用的是数字进行标记。 有序列表始于 OL 标签。每个列表项始于 LI标签。
+        </li>
+        <li>定义列表</br>
+            定义列表不仅仅是一列项目，而是项目及其注释的组合。定义列表以 DL 标签开始。每个定义列表项以 DT开始。每个自定义列表项的定义以 DD 开始。
+        </li>
+        <li>list-style属性具有三个属性分量：</br>
+            list-style-position ：设置列表项图标的位置，位于文本内或者文本外</br>
+            list-style-type： 设置列表项图标的类型</br>
+            list-style-image：使用图像设置列表项图标
+        </li>
+        <h1 style="color: blue">表单元素</h1>
+        <li>FORM表单标签</li>
+        <li>Action和确认按钮：</br>
+            当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。</br>
+            <img src="./images/1.png" alt="" style="height: 150px;width: 500px;">
+            </br>
+        </li>
+        <li>隐藏域隐藏标签： 隐藏域在页面中对于用户是不可见的，在表单中插入隐藏域的目的在于收集或发送信息，以利于被处理表单的程序所使用。浏览者单击发送按钮发送表单的时候，隐藏域的信息也被一起发送到服务器
+
+            </br>
+            <img src="./images/2.png" alt="" style="height: 150px;width: 500px;">
+            </br>
+        </li>
+        <li>input标签的掌握</br>
+            常用type类型：</br>
+            input type="" name="" value=""</br>
+            type="text" 单行文本输入框</br>
+            type="password" 密码（maxlength=""）</br>
+            type="radio" 单项选择（checked="checked"）</br>
+            type="checkbox" 多项选择</br>
+            type="button" 按钮</br>
+            type="submit" 提交 type="image"图片提交</br>
+            type="file" 上传文件</br>
+            type="reset"重置</br>
+            type="hidden" 隐藏</li>
+        <li>label>标签的使用</br>
+            label 元素不会向用户呈现任何特殊效果。</br>
+            不过，它为鼠标用户改进了可用性。</br>
+            如果您在 label 元素内点击文本，就会触发此控件。</br>
+            就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。</br>
+            label 标签的for 属性应当与相关元素的 id属性相同</br>
+            <img src="./images/3.png" alt="" style="height: 150px;width: 500px;">
+        </li>
+        <li>table表格标签</br>
+            table表格标签：table是表格标签，可以用它定义一个表格。</br>
+            table的border属性不能少</br>
+            tr td标签的使用</br>
+            tr行标签：</br>
+            tr可以定义表格中的一行，一个tr/tr表示一行。</br>
+            <hr> td单元格标签:
+            </br>
+            td可以定义表格中的一个单元格，</br>
+            td/td表示一个单元格</br>
+            border-collapse 属性设置是否将表格边框折叠为单一边框：</br>
+            border-collapse:collapse;</br>
+            colspan左右合并</br>
+            rowspan上下合并
+        </li>
+        <h1 style="color: blue">元素与元素之间的嵌套</h1>
+        <h3>行内元素</h3>
+        <li>代表标签：a,span,b,u,i,s,strong,em,ins,del</br>
+            特点：</br>
+            一行里面可以显示多个</br>
+            无法设置宽高</br>
+            大小由内容来决定</br>
+            缺点：</br>
+            不能设置宽高</br>
+            属性：display: inline</li>
+        <h3>块级元素</h3>
+        <li>代表标签：p,h1-h6,div,ul,li,ol,li,dl,dt,dd</br>
+            特点：</br>
+            独占一行</br>
+            可以设置宽高</br>
+            默认宽度一整行</br>
+            缺点：</br>
+            独占一行。</br>
+            属性： display:block</li>
+        <h3>行内块元素</h3>
+        <li>代表标签：img,input</br>
+            特点：</br>
+            可以设置宽高</br>
+            一行内可显示多个</br>
+            属性：display:inline-block</br>
+            <p style="color: red">元素之间显示方式切换：修改display属性！</p>
+            比如：想设置块级元素在同一行显示，可以设置display: inline。</br>
+            行内块元素与行内块元素之间有间隙，为了让他们之间紧挨着，可是给他们都添加浮动：float：left</li>
+        <h3>元素之间的嵌套</h3>
+        <li>标签之间是不能够随意嵌套的。</br>
+            如果一定要嵌套，要满足下面几条：</br>
+            行内元素只能包含行内元素</br>
+            块级元素可以包含所有的行内元素和部分块级元素。</br>
+            p标签，h标签都不能包含块级元素</li>
+        <h1 style="color: blue">伪类</h1>
+        <li>a:link 给a标签设置没有被访问过的样式</li>
+        <li>a:visited 给a标签设置被访问过的样式</li>
+        <li>a:hover 给a标签设置鼠标悬停时的样式</li>
+        <li> a:active 给a标签设置被点击的样式</li>
+        <li>注意：</br>
+            在使用的时候一定遵守这样的顺序：a:link,a:visited,a:hover,a:active，否则会失效！</br>
+            有些锚伪类除了可以作用在a标签上还可以作用来其它标签上：</br>
+            :link 只能用于a标签</br>
+            :visited只能用于a标签</br>
+            :hover 其它标签也可以使用这个伪类</br>
+            :active 其它标签也可以使用这个伪类</li>
+        <h1 style="color: blue">行高</h1>
+        <li> 默认情况下一行文本的行高分为：上间距+文本的高度+下间距，并且上间距是等于下间距的。所以如果行高等于容器的高度那么元素在父容器中垂直居中！</li>
+        <li>行高是可以继承的</li>
+        <li>行高的单位</br>
+            a.具体的像素值</br>
+            b.使用em：em指的是当前标签设置的字体大小。如果当前标签字体大小为16px，那么2em=32px，如果当前标签字体大小为20px，那么3em=60px;</br>
+            c.使用%百分号：与em一样，如果当前字体大小为18px，那么 line-height:200%=36px;</br>
+            d.可以什么单位都不带：与em一样，也是当前标签的字体大小为基数</br>
+        </li>
+        <li>注意：</br>
+            在设置行高的时候，如果单位是em或%，将来行高会先计算出来结果再继承给子元素。</br>
+            在设置行高的时候，如果单位是没有，将来行高会先继承给子元素再计算出行高</li>
+        <li>谷歌默认大小是16px.</li>
+        <h1 style="color: blue">font属性</h1>
+        <li>font连写：font: font-style font-weight font-size/line-heightfont-family</li>
+        <h1 style="color: blue">盒子模型</h1>
+        <li>在写一个html页面的时候，其实就相当于在这个页面中叠盒子！</br>
+            思想：万物皆盒子。</br>
+            具体内容：</br>
+            盒子的挡板---------border</br>
+            盒子的泡沫---------padding</br>
+            盒子中的物品--------内容：width、height</br>
+            盒子与盒子之间的距离---------margin</li>
+        <h3>border</h3>
+        <li>border-color:边框的颜色</br>
+            border-top-color</br>
+            border-right-color</br>
+            border-bottom-color</br>
+            border-left-color</li>
+        <li>border-width:边框的宽度</br>
+            border-top-width</br>
+            border-right-width</br>
+            border-bottom-width</br>
+            border-left-width</li>
+        <li>border-style:边框的样式</br>
+            border-top-style</br>
+            border-right-style</br>
+            border-bottom-style</br>
+            border-left-style</br>
+            取值：solid：实线 </br> dashed：虚线 </br> dotted：点线</li>
+        <li>边框的连写方法：border:border-width border-style border-color;</li>
+        <li>去掉单元格之间的间隙border-collapse: collapse;</li>
+        <h3>padding</h3>
+        <li>作用：设置盒子的内容与边框之间的距离。</br>
+            取值：</br>
+            padding: 40px;给上右下左所有的内边距都设置了40像素的距离</br>
+            padding: 40px 80px;给上下内边距设置了40像素，下左右边距设置了80像素</br>
+            padding: 40px 60px 80px;给上边距设置了40像素，左右设置60像素，下设置80像素</br>
+            padding: 40px 60px 80px 100px;以顺时针方向进行设置，依次为上右下左</br>
+            padding-top padding-right padding-bottom padding-lef</br>
+        </li>
+        <li style="color: red">小属性层叠大属性，不要把小属性写在大属性上面，会被大属性层叠</li>
+        <li>padding会改变盒子的大小，特殊情况下padding不会改变盒子的大小：</br>
+            当一个大盒子包含一个小盒子，并且大小盒子都是块级元素，而且小盒子的宽是继承自大盒子的话，那么设置小盒子的padding-left和padding-right不会改变小盒子的大小。</br>
+            <p style="color: red">小盒子的宽度会继承自大盒子，但是小盒子的高度不会继承自大盒子！</p>
+        </li>
+        <h3>margin</h3>
+        <li>作用：设置盒子与盒子之间的距离。</br>
+            取值：</br>
+            margin: 10px;给上右下左所有的外边距都设置了10像素的距离。</br>
+            margin: 10px 20px;给上下外边距设置了10像素，左右外边距设置了20像素</br>
+            margin: 10 px 20px 40px;上10px，左右20px，下40</br>
+            margin:10px 20px 40px 80px;上10，右20，下40，左80</br>
+            maring-top margin-right margin-bottom margin-lef</li>
+        <li>注意：很多标签默认带有margin和padding，所以将来进行页面的布局的时候一定要清除这些标签的默认的margin和padding. 例如：
+            </br>
+            1)body标签默认带有margin: 8px的属性</br>
+            2)p标签默认带有margin: font-size 0;</br>
+            3)h标签也默认带有margin-top和margin-bottom</br>
+            4)ul默认带有上下的margin以及左边的padding</br>
+            清除的方法：</br>
+            * {</br>
+            margin: 0;</br>
+            padding: 0;</br>
+            }</br>
+            注：width和height指的是内容的宽和高，background指的是内容的填充padding的颜色！
+        </li>
+        <h2>margin两种特殊现象</h2>
+        <li>外边距的合并现象：</br>
+            如果两个div上下排序，给上面一个div设置margin-bottom，给下面一个div设置margin-top，那么两个margin会发生合并现象，合并以后的值较大的那个</li>
+        <li>margin塌陷现象：</br>
+            如果一个大盒子中包含一个小盒子，给小盒子设置margin-top，大盒子会一起向下平移。</br>
+            解决方案：</br>
+            给大盒子加一个边框</br>
+            给大盒子设置一个overflow属性 overflow:hidden</br>
+            浮动也可以</li>
+        <li>从上一个案例中，可以总结：</br>
+            <p style="color: red">margin这个属性，本质上描述的是兄弟和兄弟之间的距离；最好不要用这个marign表达父子之间的距离。所以，我们要善于使用父亲的padding，而不是儿子的margin。</p>
+        </li>
+        <h2>margin的使用补充</h2>
+        <li>margin: 0 auto; 让容器水平居中。</li>
+        <li>margin-right: auto; 如果不设置其它属性只设置这个属性，那么浏览器在解析的时候会将一个盒子的所有的默认的margin全部给margin-right</li>
+        <li>margin设置为负数</br>
+            如果margin-left设置为负数，那么将盒子会向左移动。</br>
+            如果margin-right设置为负数，那么盒子会向右移动
+        </li>
+        <h2>关于使用margin：0 auto的注意事项</h2>
+        <li>1）使用margin:0 auto; 的盒子，必须有width，有明确的width</br>
+            2）只有标准流的盒子，才能使用margin:0 auto; 居中。</br>
+            也就是说，当一个盒子浮动了、绝对定位了、固定定位了，都不能使用margin:0auto;</br>
+            3） margin:0 auto;是在居中盒子，不是居中文本。</br>
+            文本的居中，要使用：text-align:center;</br>
+            关于text-align的补充</br>
+            text-align:left; 没啥用，因为默认居左</br>
+            text-align:right; 文本居右</li>
+        <h1 style="color: blue">浮动</h1>
+        <li>作用：解决一行中显示多个盒子的问题（并且这些盒子的位置可控。）</br>
+            浮动的性质：脱标、贴边、字围、收缩</li>
+        <li>浮动的特点：</br>
+            浮动的元素会脱离标准流
+        </li>
+        <li>浮动以后的元素会覆盖在标准流的元素之上</li>
+        <li>浮动规则：浮动找浮动，不浮动找不浮动</br>
+            浮动找浮动：只有写在同一个结构下面的浮动才会浮动找浮动</li>
+        <li>浮动显示的位置与原本不浮动之前的位置是对应的</li>
+        <li>浮动的重点：同一等级，浮动的元素只会影响下面的元素，不会影响上面的元素</li>
+        <li>浮动的元素会改变显示方式：不管元素是行内元素还是块级元素将来在显示的时候都会在同一行中显示。显示方式与行内块级元素一样。</li>
+        <li>浮动以后的元素可以设置宽高</li>
+        <li>兄弟关系的盒子，只要有一个加浮动，其余都要加浮动</li>
+        <h3>清除浮动</h3>
+        <li>浮动对页面的影响：如果一个父盒子中有一个子盒子，并且父盒子没有设置高，子盒子在父盒子中进行了浮动，那么将来父盒子的高度为0.由于父盒子的高度为0，下面的元素会自动补位，所以这个时候要进行浮动的清除。</li>
+        <li>额外标签法</br>
+            在浮动的盒子之下再放一个标签，对这个标签设置clear:both，来清除浮动对页面的影响。</br>
+            a.内部标签：会将这个浮动盒子的父盒子高度重新撑开</br>
+            b.外部标签：会将这个浮动盒子的影响清除，但是不会撑开父盒子。</br>
+            注意：一般不会使用这一种方式来清除浮动。这种清除浮动的方式会增加页面的标签。</br>
+        </li>
+        <li>overflow属性</br>
+            先找到浮动盒子的父元素，再在父元素中添加一个属性：overflow:hidden</br>
+            注意：一般也不会使用这种方式。overflow:hidden有一个特点，离开了这个元素所在的区域以后会被隐藏。</br>
+        </li>
+        <li>伪元素</br>
+            伪元素：在页面上不存在的元素，但可以通过css添加上去。每个元素都有自己的伪元素</br>
+            :after 在…之后</br>
+            :before 在…之前</br>
+            content:”” 添加内容</br>
+            默认添加的伪元素是行内元素，所以前面的h和后面的ello，worl连在一起。后面的d由于设置了display:block，所以转行显示。</br>
+            下面是利用伪元素来清楚浮动的方法：在页面的clearfix元素后面添加了一个空的块级元素（这个元素的高为0，行高也为0，并且这个元素清除了浮动）
+        </li>
+        <h1 style="color: blue">定位</h1>
+        <li>解决页面上盒子与盒子之间页面层叠的问题！使用position</li>
+        <h3>static:静态定位</h3>
+        <li>所有的标准流中的元素都是静态定位。</li>
+        <h3>relative:相对定位</h3>
+        <li>使用的时候还要配合：top,left,right,bottom来使用</li>
+        <li>是相对于自己原来的位置发生偏移，在页面上仍然占据位置，会覆盖其他内容！</li>
+        <li>不脱标，老家留坑，形影分离</li>
+        <li>相对定位的定位值：</br>
+            可以用left、right来描述盒子右、左的移动</br>
+            可以用top、bottom来描述盒子的下、上的移动</br>
+        </li>
+        <li>↘：</br>
+            position: relative;</br>
+            top: 10px;</br>
+            left: 40px;</li>
+        <li>↙：</br>
+            position: relative;</br>
+            right: 100px; →往左边移动</br>
+            top: 100px;</li>
+        <li>↖：</br>
+            position: relative; </br>
+            right: 100px;</br>
+            bottom: 100px; →移动方向是向上。</li>
+        <li>↗：</br>
+            position: relative;</br>
+            top: -200px; →负数就是相反的方向，如果是正，就是下边，如果是负数就是上边</br>
+            right: -200px;</li>
+        <li>↗：</br>
+            position: relative;</br>
+            right: -300px;</br>
+            bottom: 300px;</br>
+            完全等价于：</br>
+            position: relative;</br>
+            left: 300px;</br>
+            bottom: 300px;</li>
+        <h3>绝对定位</h3>
+        <li>绝对定位的参考点</br>
+            如果这个元素没有父元素，相对于body来定位的
+        </li>
+        <li>如果绝对定位的元素有父元素，但是父元素没有定位，还是相对于body来定位的</br>
+            如果用top描述，那么定位参考点就是页面的左上角，而不是浏览器的左上角：</br>
+            如果用bottom描述，那么就是浏览器首屏窗口尺寸，对应的页面的左下角：
+        </li>
+        <li>如果绝对定位的元素有“父”元素，而且父元素有非static定位，那么这个绝对定位的元素偏移是以自己的“父”元素为基础。要听最近的已经定位的祖先元素的，不一定是父亲，可能是爷爷！</li>
+        <li>绝对定位的儿子，无视参考的那个盒子的padding。</li>
+        <li>绝对定位之后的元素在页面不会占据位置（绝对定位以后的元素会脱离标准流）</li>
+        <li style="color: red">子绝父相：子元素使用绝对定位，父元素使用相对定位</li>
+        <li>案例：如果小盒子在大盒子中要定位并且水平居中</br>
+            先left: 50%，将小盒子在大盒子平移大盒子的一半，再设置margin-left：-(小盒子宽度的一半),注意一定是负数，那么将来小盒子在大盒子中就可以水平居中了。</br>
+            <img src="./images/4.png" alt="" style="height: 500px;width: 300px;">
+            </br>
+            <img src="./images/5.png" alt="" style="height: 150px;width: 300px;">
+        </li>
+        <h3>fixed固定定位</h3>
+        <li>不管页面有多大，固定定位的元素永远是相对于浏览器的边框来的。</li>
+        <li>固定定位的元素也脱离了标准流（不在页面上占据位置）</li>
+        <h3>z-index 设置盒子的层级</h3>
+        <li>z-index值表示谁压着谁。数值大的压盖住数值小的。</li>
+        <li>只有定位了的元素，才能有z-index值。也就是说，不管相对定位、绝对定位、固定定位，都可以使用z-index值。而浮动的东西不能用。</li>
+        <li>z-index值没有单位，就是一个正整数。默认的z-index值是0。</li>
+        <li>如果大家都没有z-index值，或者z-index值一样，那么谁写在HTML后面，谁在上面能压住别人。定位了的元素，永远能够压住没有定位的元素。</li>
+        <li>从父现象</li>
+        <h3>图文对齐</h3>
+        <li>如果文本与图片在同一行中，那么将来文字与图片的默认对齐方式是文字的基线对齐图片的底线。也就是底部对齐</li>
+        <li>vertical-align：middle 将中线对齐设置文本与图片的对齐方式</li>
+        <li>vertical-align与display:inline-block一起使用效果最好。</li>
+        <h3>overflow 溢出</h3>
+        <li>取值：</br>
+            hidden：会将超出容器的部分隐藏起来</br>
+            scroll：给容器加上滚动条</br>
+            auto：根据具体情况判断容器是否要加上滚动条</li>
+        <h3>元素的隐藏：</h3>
+        <li>overflow:hidden//将超出的部分裁剪掉</li>
+        <li>visibility: hidden//可以将元素隐藏，但是在页面上还保留着原来的位置</li>
+        <li>如果定位的盒子没有宽高，那么默认宽高为0;</br>
+            如果给子盒子设置宽度为100%,那么这个子盒子的宽与父盒子一样宽。
+        </li>
+        <li>透明度：</br>
+            opacity:不透明度 opacity:0.5; 取值在0-1之间的小数</br>
+            这个属性ie6不支持，如果要在ie6中设置透明，要用：filter: Alpha(opacity=50);
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</body>
+
+</html>
