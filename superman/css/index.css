@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+.top {
+    position: fixed;
+    height: 64px;
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #696d70;
+    padding: 12px 20px;
+}
+
+.logo .icon {
+    width: 24px;
+    height: 40px;
+    background-image: url(../imgs/LOGO.png);
+    background-repeat: no-repeat;
+}
+
+.right {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    height: 36px;
+}
+
+.right .qq {
+    float: right;
+    padding: 8px;
+    background-color: #332929;
+}
+
+.right .qq .icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../imgs/icon.png);
+}
+
+.right .yuyue {
+    float: right;
+    width: 100px;
+    height: 100%;
+    color: #fff;
+    background-color: #d12324;
+    margin-right: 2px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    width: 40%;
+    background-color: pink;
+    margin: 0 auto;
+   
+}
+
+li {
+    float: left;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    font: 400 16px/64px "Microsoft YaHei" ;
+    color: #665C5C;
+    
+    
+}
