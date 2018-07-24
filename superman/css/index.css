@@ -59,24 +59,18 @@ body {
     line-height: 36px;
 }
 
-.nav {
-    list-style-type: none;
-    overflow: hidden;
+.nav{
+    
     width: 40%;
-    background-color: pink;
     margin: 0 auto;
-   
+    display: flex;
+    justify-content: space-between;
 }
-
-li {
-    float: left;
-}
-
-.nav a {
+.nav a{
     display: block;
+    color: #665c5c;
+    font: 400 16px/64px "Microsoft YaHei" !important;
+}
+a{
     text-decoration: none;
-    font: 400 16px/64px "Microsoft YaHei" ;
-    color: #665C5C;
-    
-    
 }
